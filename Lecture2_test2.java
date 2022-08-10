@@ -44,5 +44,13 @@ public class Lecture2_test2 {
             }
         }
         System.out.println(answer);
+        /*
+         * 더 좋은 답
+         * int[] answer = new int[arr.length];
+         * for (int i = 0; i < arr.length; i++) answer[i] = i + 1;
+         * 
+         * Arrays.sort(arr);
+         * return Arrays.equals(answer, arr);
+         */
     }
 }
