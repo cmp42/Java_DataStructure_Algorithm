@@ -40,7 +40,6 @@ public class Lecture2_test2 {
         for (int i = 0; i < arr.length; i++) {
             if (arr2[i] == 0) {
                 answer = false;
-                System.out.println("여기서 걸린다고?");
                 break ;
             }
         }
