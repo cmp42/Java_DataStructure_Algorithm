@@ -36,6 +36,7 @@ class Mydata {
         // TODO Auto-generated method stub
         return Objects.hash(v);
     }
+    // hash 코드에 대해 이야기하셨는데, 정확히 이해하지는 못했다. java를 더 공부해보고 해결할 것
 }
 
 public class Lecture3_1 {
