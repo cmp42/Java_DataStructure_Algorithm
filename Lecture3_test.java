@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Lecture3_test {
-    public int solution(int[] nums) {
+    public static int solution(int[] nums) {
         int max = nums.length / 2;
 
         HashSet<Integer> numSet = new HashSet<>();
@@ -9,9 +9,17 @@ public class Lecture3_test {
         for (int num : nums) {
             numSet.add(num);
         }
+        System.out.println(numSet);
+        System.out.println(numSet.size());
 
         if (numSet.size() > max) return max;
         else return numSet.size();
+        // 조금만 더 생각해보자 dfs로 풀어야 된다는 생각을 버리자
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3,1,2,3};
+        solution(nums);
     }
     /*
     static Map<int [], Integer> pokemon = new HashMap<>();
