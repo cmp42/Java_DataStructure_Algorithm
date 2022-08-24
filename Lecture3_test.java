@@ -1,6 +1,19 @@
 import java.util.*;
 
 public class Lecture3_test {
+    public int solution(int[] nums) {
+        int max = nums.length / 2;
+
+        HashSet<Integer> numSet = new HashSet<>();
+
+        for (int num : nums) {
+            numSet.add(num);
+        }
+
+        if (numSet.size() > max) return max;
+        else return numSet.size();
+    }
+    /*
     static Map<int [], Integer> pokemon = new HashMap<>();
     static int[] array = new int[2];
     public static void main(String[] args) {
@@ -37,4 +50,5 @@ public class Lecture3_test {
             idx--;
         }
     }
+    */
 }
