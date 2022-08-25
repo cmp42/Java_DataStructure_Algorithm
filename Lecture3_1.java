@@ -11,7 +11,8 @@ import java.util.Objects;
  */
 
  // custom 클래스를 생성한다고 해보자
-class Mydata {
+/*
+ class Mydata {
     int v;
 
     public Mydata(int v) {
@@ -38,7 +39,7 @@ class Mydata {
     }
     // hash 코드에 대해 이야기하셨는데, 정확히 이해하지는 못했다. java를 더 공부해보고 해결할 것
 }
-
+/* */
 public class Lecture3_1 {
     public static void main(String[] args) {
         // 유연하면서도 빠르게 읽어내는 자료구조?
@@ -59,9 +60,5 @@ public class Lecture3_1 {
         // HashMap : not synchronized
         // Hashtable : synchronized
         // ConcurrentHashMap : syncronized + hish concurrency
-    }
-
-    public static void method1(Map<String, Integer> map) {
-
     }
 }

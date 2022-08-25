@@ -2,26 +2,37 @@ import java.util.*;
 
 public class Lecture3_test2 {
     public static void main(String[] args) {
-        String[] part = {"leo", "kiki", "eden"};
-        String[] comp = {"eden", "kiki"};
+        String[] part = {"mislav", "stanko", "mislav", "ana"};
+        String[] comp = {"stanko", "ana", "mislav"};
+        boolean check = false;
+        final List<String> arr = new ArrayList<>();
+        
+        Collections.addAll(arr, comp);
+        String answer = "";
 
-        System.out.println(part - comp);
-        /*
-        HashSet<String> answer = new HashSet<>();
-
+        System.out.println(arr);
         for (String str : part) {
-            int count = 0;
-            for (String str2 : comp) {
-                if (str != str2) {
-                    count++;
+            for (String str2 : arr) {
+                if (str.equals(str2)) {
+                    check = true;
+                    break ;
+                }
+                check = false;
+            }
+            if (check) {
+                for (String str2 : arr) {
+                    System.out.println("str == " + str + " str2 == " + str2);
+                    if (str.equals(str2)){
+                        arr.remove(str2);
+                        break ;
+                    }
                 }
             }
-            if (count == comp.length) {
-                answer.add(str);
+            else {
+                answer = str;
             }
         }
         System.out.println(answer);
-        */
 
     }
 
