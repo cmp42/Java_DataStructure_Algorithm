@@ -1,19 +1,18 @@
 import java.util.*;
-import java.util.stream.Stream;
 
 public class Lecture3_test2 {
     public static void main(String[] args) {
         String[] participant = {"mislav", "stanko", "mislav", "ana"};
         String[] completion = {"stanko", "ana", "mislav"};
         
-        System.out.println("1234");
-        List<String> part = new ArrayList(Arrays.asList(participant));
-        List<String> comp = Arrays.asList(completion);
+        Arrays.sort(participant);
+        Arrays.sort(completion);
         
-        for (String str : comp) {
-            part.remove(str);
+        for (int i = 0; i < completion.length; i++) {
+            if (!participant[i].equals(completion[i])) {
+                System.out.println(participant[i]);       
+            }
         }
-        System.out.println(part);
     }
 
     public static String solution(String[] participant, String[] completion) {
